@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NP Payment URL Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>NP Payment URL Generator</h2>
+        <label for="tenantUrl">Tenant URL:</label>
+        <input type="text" id="tenantUrl" placeholder="Enter tenant URL">
+
+        <label for="tier">Tier:</label>
+        <select id="tier">
+            <option value="essential">Essential</option>
+            <option value="premier">Premier</option>
+            <option value="elite">Elite</option>
+        </select>
+
+        <label for="period">Period:</label>
+        <select id="period">
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+
+        <label for="promoCode">Promo Code (Optional):</label>
+        <input type="text" id="promoCode" placeholder="Enter promo code">
+
+        <button id="generateBtn" style="margin-top: 20px;">Generate URL</button>
+        <button id="copyBtn">Copy URL</button>
+
+        <p id="generatedUrl"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
