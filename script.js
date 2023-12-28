@@ -4,7 +4,7 @@ document.getElementById('generateBtn').addEventListener('click', function () {
     var period = document.getElementById('period').value;
     var promoCode = document.getElementById('promoCode').value.toUpperCase();
 
-    var generatedUrl = 'https://ninjapipe.com/purchase-plan/' + tenantUrl + '/' + tier + '/' + period;
+    var generatedUrl = 'https://app.ninjapipe.com/purchase-plan/' + tenantUrl + '/' + tier + '/' + period;
     if (promoCode) {
         generatedUrl += '?promo=' + promoCode;
     }
